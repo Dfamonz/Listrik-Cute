@@ -59,9 +59,8 @@ training_columns_and_dtypes = {
     'tariff_class_R2': 'bool', 'tariff_class_R3': 'bool'
 }
 
-# Create an empty DataFrame with the correct columns and dtypes
-final_input_df =
-pd.DataFrame(columns=training_columns_and_dtypes.keys())
+# Create an empty DataFrame with the correct columns and dtypes 
+final_input_df = pd.DataFrame(columns=training_columns_and_dtypes.keys()) 
 for col, dtype in training_columns_and_dtypes.items():
     final_input_df[col] = final_input_df[col].astype(dtype)
 
